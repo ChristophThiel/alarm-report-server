@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmReport.Web", "AlarmReport.Web\AlarmReport.Web.csproj", "{83A62E43-24C3-4761-92D0-98C986937E7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmReport.Web", "AlarmReport.Web\AlarmReport.Web.csproj", "{C82FD3A4-B210-4E92-982E-302C1A4389A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83A62E43-24C3-4761-92D0-98C986937E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83A62E43-24C3-4761-92D0-98C986937E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83A62E43-24C3-4761-92D0-98C986937E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83A62E43-24C3-4761-92D0-98C986937E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82FD3A4-B210-4E92-982E-302C1A4389A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82FD3A4-B210-4E92-982E-302C1A4389A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82FD3A4-B210-4E92-982E-302C1A4389A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82FD3A4-B210-4E92-982E-302C1A4389A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C6DF2FA9-E320-40B8-A994-A46DDAB63EBA}
+		SolutionGuid = {069FEBF1-9FEB-495A-9079-A4BBAE022E70}
 	EndGlobalSection
 EndGlobal
