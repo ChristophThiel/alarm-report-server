@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AlarmReport.Web.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Cors;
 
 namespace AlarmReport.Web.Controllers
 {
@@ -9,10 +10,10 @@ namespace AlarmReport.Web.Controllers
     {
         [HttpPost]
         [Route("alarm/pdf")]
+        [EnableCors("AllowSpecificOrigin")]
         public string GeneratePdf([FromBody] Alarm alarm)
         {
-            var json = JsonConvert.SerializeObject(alarm);
-            return alarm == null ? $"Error in {GetType().Name}: alarm cannot be null!" : "Pdf successful generated!";
+            return JsonConvert.SerializeObject(alarm == null ? $"Error in {GetType().Name}: alarm cannot be null!" : "Pdf successful generated!");
         }
     }
 }
