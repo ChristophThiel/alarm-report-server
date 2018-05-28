@@ -1,7 +1,11 @@
-﻿namespace AlarmReport.Web.Models
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
+
+namespace AlarmReport.Web.Models
 {
     public class Alarm
     {
+        [JsonProperty("alarmKeyword")]
         public string AlarmKeyword { get; set; }
 
         public Alarm(string alarmKeyword)
