@@ -2,6 +2,7 @@
 using AlarmReport.Web.Models;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Cors;
+using AlarmReport.Web.Properties;
 
 namespace AlarmReport.Web.Controllers
 {
