@@ -2,7 +2,7 @@
 using AlarmReport.Web.Models;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Cors;
-using AlarmReport.Web.Properties;
+using System.Text;
 
 namespace AlarmReport.Web.Controllers
 {
@@ -15,6 +15,13 @@ namespace AlarmReport.Web.Controllers
         public string GeneratePdf([FromBody] Alarm alarm)
         {
             return JsonConvert.SerializeObject(alarm == null ? $"Error in {GetType().Name}: alarm cannot be null!" : "Pdf successful generated!");
+        }
+
+        [HttpGet]
+        [Route("keywords")]
+        public string GetAlarmKeywords()
+        {
+            return Encoding.UTF8.GetString(Properties.Resources.AlarmKeywords);
         }
     }
 }
