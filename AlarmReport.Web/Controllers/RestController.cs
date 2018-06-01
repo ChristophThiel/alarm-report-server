@@ -16,12 +16,5 @@ namespace AlarmReport.Web.Controllers
         {
             return JsonConvert.SerializeObject(alarm == null ? $"Error in {GetType().Name}: alarm cannot be null!" : "Pdf successful generated!");
         }
-
-        [HttpGet]
-        [Route("keywords")]
-        public string GetAlarmKeywords()
-        {
-            return Encoding.UTF8.GetString(Properties.Resources.AlarmKeywords);
-        }
     }
 }
