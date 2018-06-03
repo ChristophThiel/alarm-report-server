@@ -36,6 +36,8 @@ namespace AlarmReport.Web
             
             services.AddDbContext<DatabaseContext>(options => options.UseMySQL(config.GetConnectionString("AlarmService")));
             services.AddMvc();
+
+            services.BuildServiceProvider().GetService<DatabaseContext>().Database.EnsureCreated();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
