@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AlarmReport.Web.Manager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AlarmReport.Web
@@ -23,6 +28,13 @@ namespace AlarmReport.Web
                     .AllowAnyMethod()
                     .AllowCredentials());
             });
+            
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true)
+                .Build();
+            
+            services.AddDbContext<DatabaseContext>(options => options.UseMySQL(config.GetConnectionString("AlarmService")));
             services.AddMvc();
         }
 
@@ -36,11 +48,6 @@ namespace AlarmReport.Web
 
             app.UseCors("AllowSpecificOrigin");
             app.UseMvc();
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Nothing found!");
-            });
         }
     }
 }

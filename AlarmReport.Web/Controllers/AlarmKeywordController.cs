@@ -6,6 +6,8 @@ using System.Text;
 using System.IO;
 using System;
 using Microsoft.AspNetCore.Hosting;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace AlarmReport.Web.Controllers
 {
@@ -19,7 +21,9 @@ namespace AlarmReport.Web.Controllers
         }
         
         [HttpGet]
-        [EnableCors("AllowSpecificOrigin")]
-        public ContentResult GetAlarmKeywords() => this.Content(System.IO.File.ReadAllText(Path.Combine(this._environment.WebRootPath, "json", "AlarmKeywords.json")), "application/json");
+        public async Task<ContentResult> GetAlarmKeywords(CancellationToken cancellationToken)
+        {
+            return this.Content(await System.IO.File.ReadAllTextAsync(Path.Combine(this._environment.WebRootPath, "json", "AlarmKeywords.json"), cancellationToken), "application/json");
+        }
     }
 }
