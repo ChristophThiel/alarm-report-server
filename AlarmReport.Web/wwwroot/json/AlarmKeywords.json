@@ -1,6 +1,6 @@
 ﻿{
     "fireAlarmIdentifier": "Brandmeldealarm",
-    "fireAlarmTypes": [
+    "fireAlarmKeywords": [
         "Brandmeldealarm",
         "Brandmeldetaste Gedrückt",
         "Brand Gewerbe, Industrie",
@@ -16,7 +16,7 @@
         "Brandeinsatz, Klein",
         "Brand Elektrische Anlagen"
     ],
-    "technicalAlarmTypes": [
+    "technicalAlarmKeywords": [
         "Verkehrsunfall Aufräumarbeiten",
         "Verkehrsunfall Eingeklemmte Person",
         "Personenrettung",
