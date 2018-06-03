@@ -59,15 +59,5 @@ namespace AlarmReport.Web.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] AlarmKeywords {
-            get {
-                object obj = ResourceManager.GetObject("AlarmKeywords", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

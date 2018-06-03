@@ -19,6 +19,7 @@ namespace AlarmReport.Web.Controllers
         }
         
         [HttpGet]
+        [EnableCors("AllowSpecificOrigin")]
         public ContentResult GetAlarmKeywords() => this.Content(System.IO.File.ReadAllText(Path.Combine(this._environment.WebRootPath, "json", "AlarmKeywords.json")), "application/json");
     }
 }
