@@ -1,0 +1,35 @@
+﻿{
+    "fireAlarmIdentifier": "Brandmeldealarm",
+    "fireAlarmTypes": [
+        "Brandmeldealarm",
+        "Brandmeldetaste Gedrückt",
+        "Brand Gewerbe, Industrie",
+        "Brand Wohnhaus",
+        "Brand Landwirtschaftliches Objekt",
+        "Brand Gebäude Menschenansammlung",
+        "Brandeinsatz",
+        "Brand Abfall Container",
+        "Brandverdacht",
+        "Brand Baum, Flur, Böschung",
+        "Brand Kamin",
+        "Brand KFZ",
+        "Brandeinsatz, Klein",
+        "Brand Elektrische Anlagen"
+    ],
+    "technicalAlarmTypes": [
+        "Verkehrsunfall Aufräumarbeiten",
+        "Verkehrsunfall Eingeklemmte Person",
+        "Personenrettung",
+        "Technischer Einsatz",
+        "Übungsalarm",
+        "Fahrzeugbergung",
+        "Eingeschlossene Person in Lift",
+        "Ölspur, Ölaustritt",
+        "Technischer Einsatz Klein",
+        "Sturmschaden",
+        "Tierrettung",
+        "Türöffnung",
+        "Überflutung",
+        "Wasserschaden"
+    ]
+}
